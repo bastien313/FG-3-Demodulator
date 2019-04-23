@@ -1,0 +1,261 @@
+EESchema Schematic File Version 4
+LIBS:FSM_DLATCH-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5CBB9931
+P 1025 1250
+F 0 "J?" H 945 1467 50  0000 C CNN
+F 1 "Conn_01x02" H 945 1376 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 1025 1250 50  0001 C CNN
+F 3 "~" H 1025 1250 50  0001 C CNN
+	1    1025 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5CBB9A5D
+P 1575 1150
+F 0 "#PWR?" H 1575 1000 50  0001 C CNN
+F 1 "+BATT" H 1590 1323 50  0000 C CNN
+F 2 "" H 1575 1150 50  0001 C CNN
+F 3 "" H 1575 1150 50  0001 C CNN
+	1    1575 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 1150 1575 1250
+Wire Wire Line
+	1575 1250 1225 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5CBB9A99
+P 1575 1425
+F 0 "#PWR?" H 1575 1175 50  0001 C CNN
+F 1 "GND" H 1580 1252 50  0000 C CNN
+F 2 "" H 1575 1425 50  0001 C CNN
+F 3 "" H 1575 1425 50  0001 C CNN
+	1    1575 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 1425 1575 1350
+Wire Wire Line
+	1575 1350 1225 1350
+$Comp
+L Regulator_Linear:L7805 U?
+U 1 1 5CBB9AE8
+P 3175 1250
+F 0 "U?" H 3175 1492 50  0000 C CNN
+F 1 "L7805" H 3175 1401 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-2" H 3200 1100 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 3175 1200 50  0001 C CNN
+	1    3175 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5CBB9B78
+P 2275 1425
+F 0 "C?" H 2390 1471 50  0000 L CNN
+F 1 "10uF 25V" V 2150 1200 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 2275 1425 50  0001 C CNN
+F 3 "~" H 2275 1425 50  0001 C CNN
+	1    2275 1425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CBB9CE7
+P 3800 1450
+F 0 "C?" H 3915 1496 50  0000 L CNN
+F 1 "100nF" H 3915 1405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3838 1300 50  0001 C CNN
+F 3 "~" H 3800 1450 50  0001 C CNN
+	1    3800 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1300 3800 1250
+Wire Wire Line
+	3800 1250 3475 1250
+Wire Wire Line
+	2875 1250 2275 1250
+Wire Wire Line
+	2275 1250 2275 1275
+Wire Wire Line
+	2275 1250 1575 1250
+Connection ~ 2275 1250
+Connection ~ 1575 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5CBB9ED7
+P 2275 1625
+F 0 "#PWR?" H 2275 1375 50  0001 C CNN
+F 1 "GND" H 2280 1452 50  0000 C CNN
+F 2 "" H 2275 1625 50  0001 C CNN
+F 3 "" H 2275 1625 50  0001 C CNN
+	1    2275 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2275 1625 2275 1575
+$Comp
+L power:GND #PWR?
+U 1 1 5CBB9F32
+P 3175 1625
+F 0 "#PWR?" H 3175 1375 50  0001 C CNN
+F 1 "GND" H 3180 1452 50  0000 C CNN
+F 2 "" H 3175 1625 50  0001 C CNN
+F 3 "" H 3175 1625 50  0001 C CNN
+	1    3175 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CBB9F45
+P 3800 1625
+F 0 "#PWR?" H 3800 1375 50  0001 C CNN
+F 1 "GND" H 3805 1452 50  0000 C CNN
+F 2 "" H 3800 1625 50  0001 C CNN
+F 3 "" H 3800 1625 50  0001 C CNN
+	1    3800 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1625 3800 1600
+Wire Wire Line
+	3175 1625 3175 1550
+$Comp
+L power:+5V #PWR?
+U 1 1 5CBBA0A4
+P 3800 1150
+F 0 "#PWR?" H 3800 1000 50  0001 C CNN
+F 1 "+5V" H 3815 1323 50  0000 C CNN
+F 2 "" H 3800 1150 50  0001 C CNN
+F 3 "" H 3800 1150 50  0001 C CNN
+	1    3800 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1150 3800 1250
+Connection ~ 3800 1250
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5CBBC50F
+P 1725 3100
+F 0 "J?" H 1645 3417 50  0000 C CNN
+F 1 "FGM SENSOR" H 1645 3326 50  0000 C CNN
+F 2 "Connectors_Samtec:SL-103-X-XX_1x03" H 1725 3100 50  0001 C CNN
+F 3 "~" H 1725 3100 50  0001 C CNN
+	1    1725 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CBBC6E7
+P 1325 3150
+F 0 "C?" H 1000 3150 50  0000 L CNN
+F 1 "100nF" H 975 3050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1363 3000 50  0001 C CNN
+F 3 "~" H 1325 3150 50  0001 C CNN
+	1    1325 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CBBC8DB
+P 1325 2925
+F 0 "#PWR?" H 1325 2775 50  0001 C CNN
+F 1 "+5V" H 1340 3098 50  0000 C CNN
+F 2 "" H 1325 2925 50  0001 C CNN
+F 3 "" H 1325 2925 50  0001 C CNN
+	1    1325 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1325 2925 1325 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5CBBCAD8
+P 1325 3400
+F 0 "#PWR?" H 1325 3150 50  0001 C CNN
+F 1 "GND" H 1330 3227 50  0000 C CNN
+F 2 "" H 1325 3400 50  0001 C CNN
+F 3 "" H 1325 3400 50  0001 C CNN
+	1    1325 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1325 3400 1325 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5CBBCD2F
+P 2200 3375
+F 0 "#PWR?" H 2200 3125 50  0001 C CNN
+F 1 "GND" H 2205 3202 50  0000 C CNN
+F 2 "" H 2200 3375 50  0001 C CNN
+F 3 "" H 2200 3375 50  0001 C CNN
+	1    2200 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3375 2200 3200
+$Comp
+L power:+5V #PWR?
+U 1 1 5CBBD1E0
+P 2200 2900
+F 0 "#PWR?" H 2200 2750 50  0001 C CNN
+F 1 "+5V" H 2215 3073 50  0000 C CNN
+F 2 "" H 2200 2900 50  0001 C CNN
+F 3 "" H 2200 2900 50  0001 C CNN
+	1    2200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1925 3200 2200 3200
+Wire Wire Line
+	1925 3000 2200 3000
+Wire Wire Line
+	2200 3000 2200 2900
+Text Label 2325 3100 2    50   ~ 0
+FM_OUT
+Wire Wire Line
+	2325 3100 1925 3100
+$Comp
+L 4xxx:4046 U?
+U 1 1 5CBFA20A
+P 5450 3175
+F 0 "U?" H 5000 3900 50  0000 C CNN
+F 1 "74HC4046" H 5100 3800 50  0000 C CNN
+F 2 "" H 5450 3175 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/HEF4046B.pdf" H 5450 3175 50  0001 C CNN
+F 4 "F:1085346" H 5450 3175 50  0001 C CNN "SUPPLIER"
+	1    5450 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CBFA369
+P 5450 2075
+F 0 "#PWR?" H 5450 1925 50  0001 C CNN
+F 1 "+5V" H 5465 2248 50  0000 C CNN
+F 2 "" H 5450 2075 50  0001 C CNN
+F 3 "" H 5450 2075 50  0001 C CNN
+	1    5450 2075
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
